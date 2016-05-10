@@ -1,0 +1,12 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#baseline : 'MetaLinks-Toolkit',
+			#directory : 'repository',
+			#platforms : [ #pharo ]
+		}
+	],
+	#testing : {
+		#packages : [ 'MetaLinks-Toolkit.*' ]
+	}
+}
