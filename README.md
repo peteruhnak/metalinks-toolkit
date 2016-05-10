@@ -2,6 +2,16 @@
 
 A toolkit simplifying the installation and reinstallation of MetaLinks.
 
+## Installation
+
+```
+Metacello new
+	baseline: 'MetaLinksToolkit';
+	repository: 'github://peteruhnak/metalinks-toolkit/repository';
+	load.
+```
+
+
 MetaLinks themselves provide only very basic operations, e.g.:
 
 ```st
