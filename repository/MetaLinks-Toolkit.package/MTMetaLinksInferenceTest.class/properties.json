@@ -1,0 +1,14 @@
+{
+	"category" : "MetaLinks-Toolkit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inference" ],
+	"name" : "MTMetaLinksInferenceTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

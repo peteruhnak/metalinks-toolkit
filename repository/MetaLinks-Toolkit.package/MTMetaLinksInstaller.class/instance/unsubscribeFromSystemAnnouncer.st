@@ -1,0 +1,3 @@
+system announcements
+unsubscribeFromSystemAnnouncer
+	SystemAnnouncer uniqueInstance unsubscribe: self

@@ -1,0 +1,1 @@
+I hold targets for a particular class.

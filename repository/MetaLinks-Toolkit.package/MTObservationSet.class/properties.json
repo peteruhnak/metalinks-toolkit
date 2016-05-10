@@ -1,0 +1,17 @@
+{
+	"category" : "MetaLinks-Toolkit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 5/8/2016 12:37",
+	"instvars" : [
+		"target",
+		"add",
+		"remove",
+		"change" ],
+	"name" : "MTObservationSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

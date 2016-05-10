@@ -1,0 +1,14 @@
+{
+	"category" : "MetaLinks-Toolkit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 5/8/2016 12:30",
+	"instvars" : [
+		"ignoredInstanceVariables" ],
+	"name" : "MTMetaLinksInference",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

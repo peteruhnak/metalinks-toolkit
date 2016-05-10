@@ -1,0 +1,14 @@
+{
+	"category" : "MetaLinks-Toolkit-Utility",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 5/4/2016 11:04",
+	"instvars" : [
+		 ],
+	"name" : "MTMethodHasMetaLinkAction",
+	"pools" : [
+		 ],
+	"super" : "AbstractMethodIconAction",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "MetaLinks-Toolkit-Utility",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 5/8/2016 12:19",
+	"instvars" : [
+		 ],
+	"name" : "MTMetalinkIconStyler",
+	"pools" : [
+		 ],
+	"super" : "MetalinkIconStyler",
+	"type" : "normal" }

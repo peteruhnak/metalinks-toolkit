@@ -1,0 +1,1 @@
+I open class-side examples marked with <plagroundExample> in Playground instead of directly executing them.

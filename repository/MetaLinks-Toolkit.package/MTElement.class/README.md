@@ -1,0 +1,1 @@
+I am a dummy target for MetaLinks installer tests.
