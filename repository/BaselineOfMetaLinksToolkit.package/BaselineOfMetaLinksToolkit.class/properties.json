@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfMetaLinksToolkit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 5/10/2016 10:27",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfMetaLinksToolkit",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
