@@ -2,6 +2,16 @@
 
 A toolkit simplifying the installation and reinstallation of MetaLinks.
 
+TOC:
+
+* [Installation](#installation)
+* [Persistent MetaLinks](#permanent-installer)
+  * [Installing to a selector](#installing-selector)
+  * [Installing to an attribute](#installing-attribute)
+* [Change Observer Installer](#change-installer)
+* [Observation Inference](#inference)
+
+<a name="installation"></a>
 ## Installation
 
 ```
@@ -41,6 +51,7 @@ Now install the link to every method in the class, and every time you trigger a 
 
 This toolkit does that automatically and much more.
 
+<a name="permanent-installer"></a>
 ## MTMetaLinksInstaller — persistent MetaLinks
 
 Class `MTMetaLinksInstaller` provides an API for permanently installing metalinks to a class. As the AST of a methods can very drastically between changes, this API does not permit installation to arbitrary nodes.
@@ -49,6 +60,7 @@ Instead we recognize two primary targets:
 * selector (method)
 * attribute (instance variable)
 
+<a name="installing-selector"></a>
 ### Installing to a selector
 
 Targetting a selector will always keep the MetaLink installed. You also maintain the control of the metalink itself.
@@ -71,6 +83,8 @@ or more aggresively (removing all permanent metalinks in th class including attr
 ```st
 installer uninstallAllPermanentLinksIn: MTElement.
 ```
+
+<a name="installing-attribute"></a>
 ### Installing to an attribute
 
 An attribute link will be added to all assignment nodes in the entire class **except** the `initialize` method. Similarly to a method, if you add a new assignment (or a new method with an assignment), it will be (re)added.
@@ -85,6 +99,7 @@ and to uninstall
 installer uninstallAttribute: #name of: MTElement.
 ```
 
+<a name="change-installer"></a>
 ## MTMetaLinksChangeInstaller
 
 The primary purpose of this is class is to ease the observation of changes in models without touching the code itself.
@@ -141,7 +156,8 @@ where `object` is the observed object, and `newValue` the newly assigned value."
 ci changeMetaObjectBlock: [ :object :newValue | ... ]
 ```
 
-### MTMetaLinksInference
+<a name="inference"></a>
+## MTMetaLinksInference
 
 Final tool in the toolkit is an automatic inferencer. This will scan through the source code of the provided methods and will guess what places should be observed.
 
