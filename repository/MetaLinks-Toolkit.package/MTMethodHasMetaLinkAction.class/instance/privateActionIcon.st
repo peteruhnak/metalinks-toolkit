@@ -3,7 +3,9 @@ privateActionIcon
 	"Return the icon for this action"
 
 	^ IconicButton new
-		target: [ :aMethod | ((aMethod ast allChildren collect: #links) reject: #isNil) flatten inspect ];
+		target: [ :aMethod | 
+			(((aMethod ast allChildren collect: #links) reject: #isNil) flatCollect: #yourself)
+				inspect ];
 		actionSelector: #value:;
 		arguments: {method};
 		labelGraphic: (Smalltalk ui icons iconNamed: #breakpoint);
