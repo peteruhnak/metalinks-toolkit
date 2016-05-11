@@ -10,6 +10,7 @@ TOC:
   * [Installing to an attribute](#installing-attribute)
 * [Change Observer Installer](#change-installer)
 * [Observation Inference](#inference)
+* [Nautilus Extensions](#nautilus)
 
 <a name="installation"></a>
 ## Installation
@@ -175,3 +176,14 @@ MTMetaLinksInference new inferClasses: { MTElement . MTContainer }
 ) )"
 ```
 
+<a name="nautilus"></a>
+## Nautilus Extensions
+
+Two simple extensions are added for Nautilus. One is an enabled copy of already existing method styler that shows where in the ast are installed metalinks.
+
+![](figures/metamethod1.png)
+![](figures/metamethod2.png)
+
+And the second one with similar behavior that shows a flag in Nautilus that a method has a metalink installed.
+
+![](figures/metamethod3.png)
