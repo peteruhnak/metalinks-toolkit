@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "PeterUhnak 5/8/2016 12:19",
+	"commentStamp" : "PeterUhnak 5/11/2016 11:22",
 	"instvars" : [
 		 ],
 	"name" : "MTMetalinkIconStyler",
 	"pools" : [
 		 ],
-	"super" : "MetalinkIconStyler",
+	"super" : "AbstractIconStyler",
 	"type" : "normal" }

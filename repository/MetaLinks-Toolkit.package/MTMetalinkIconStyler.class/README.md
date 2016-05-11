@@ -1,1 +1,1 @@
-I just enable the MetalinkIconStyler without changing my parent.
+I am a copy of MetalinkIconStyler that is actually enabled.
