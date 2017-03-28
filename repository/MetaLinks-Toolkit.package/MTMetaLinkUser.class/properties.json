@@ -1,0 +1,15 @@
+{
+	"category" : "MetaLinks-Toolkit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"link" ],
+	"name" : "MTMetaLinkUser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

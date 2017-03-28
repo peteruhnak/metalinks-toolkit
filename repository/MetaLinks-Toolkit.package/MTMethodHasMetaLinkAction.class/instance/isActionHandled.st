@@ -2,4 +2,4 @@ order
 isActionHandled
 	"Return true if the provided method fits this action requirement"
 
-	^method hasLinks
+	^ method hasLinks and: [ (self allLinksInMethod: method) isNotEmpty ]
