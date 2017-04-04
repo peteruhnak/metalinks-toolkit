@@ -1,18 +1,17 @@
 {
-	"category" : "MetaLinks-Toolkit-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "MetaLinks-Toolkit-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"installer",
 		"observation",
 		"executed",
 		"container",
-		"element" ],
+		"element"
+	],
 	"name" : "MTMetaLinksChangeInstallerTest",
-	"pools" : [
-		 ],
-	"super" : "TestCase",
-	"type" : "normal" }
+	"type" : "normal"
+}

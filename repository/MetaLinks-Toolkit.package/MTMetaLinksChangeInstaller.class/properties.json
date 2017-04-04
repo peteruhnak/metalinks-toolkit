@@ -1,17 +1,16 @@
 {
-	"category" : "MetaLinks-Toolkit",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "PeterUhnak 5/8/2016 13:22",
+	"super" : "Object",
+	"category" : "MetaLinks-Toolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"installer",
 		"addMetaObjectBlock",
 		"removeMetaObjectBlock",
-		"changeMetaObjectBlock" ],
+		"changeMetaObjectBlock"
+	],
 	"name" : "MTMetaLinksChangeInstaller",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

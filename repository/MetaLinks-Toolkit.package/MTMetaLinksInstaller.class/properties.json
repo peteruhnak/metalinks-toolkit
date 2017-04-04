@@ -1,16 +1,15 @@
 {
-	"category" : "MetaLinks-Toolkit",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "PeterUhnak 5/6/2016 10:38",
+	"super" : "Object",
+	"category" : "MetaLinks-Toolkit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"attributeLinks",
 		"methodLinks",
-		"ignoredSelectors" ],
+		"ignoredSelectors"
+	],
 	"name" : "MTMetaLinksInstaller",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
