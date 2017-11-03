@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "MetaLinks-Toolkit-Tests",
+	"super" : "Object",
+	"category" : "MetaLinks-Toolkit",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inference"
+		"target",
+		"link"
 	],
-	"name" : "MTMetaLinksInferenceTest",
+	"name" : "MTMetaLinkUser",
 	"type" : "normal"
 }

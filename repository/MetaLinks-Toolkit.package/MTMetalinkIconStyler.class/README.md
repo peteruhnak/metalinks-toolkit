@@ -1,1 +1,0 @@
-I am a copy of MetalinkIconStyler that is actually enabled.
