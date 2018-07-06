@@ -127,7 +127,7 @@ MTMetaLinksInstallerTest >> testNoAttributeLinkToInitialize [
 
 { #category : #tests }
 MTMetaLinksInstallerTest >> testReinstallAttribute [
-	target primitiveChangeClassTo: target class newAnonymousSubclass new.
+	target primitiveChangeClassTo: (target class subclass: (target className , 'ForTest') asSymbol) new.
 	metaLink := MetaLink new.
 	installer installPermanent: metaLink toAttribute: #name of: target class.
 	target class compile: 'resetName name := ''some name'''.
@@ -136,7 +136,7 @@ MTMetaLinksInstallerTest >> testReinstallAttribute [
 
 { #category : #tests }
 MTMetaLinksInstallerTest >> testReinstallMethod [
-	target primitiveChangeClassTo: target class newAnonymousSubclass new.
+	target primitiveChangeClassTo: (target class subclass: (target className , 'ForTest') asSymbol) new.
 	target class compile: 'name ^ name'.
 	metaLink := MetaLink new.
 	installer installPermanent: metaLink toMethod: #name of: target class.
