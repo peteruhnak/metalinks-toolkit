@@ -1,4 +1,5 @@
-# MetaLinks Toolkit [![Build Status](https://travis-ci.org/peteruhnak/metalinks-toolkit.svg?branch=master)](https://travis-ci.org/peteruhnak/metalinks-toolkit)
+# MetaLinks Toolkit
+[![Build Status](https://travis-ci.org/peteruhnak/metalinks-toolkit.svg?branch=master)](https://travis-ci.org/peteruhnak/metalinks-toolkit) [![Coverage Status](https://coveralls.io/repos/github/peteruhnak/metalinks-toolkit/badge.svg?branch=master)](https://coveralls.io/github/peteruhnak/metalinks-toolkit?branch=master)
 
 A toolkit simplifying the installation and reinstallation of MetaLinks.
 
@@ -15,7 +16,7 @@ TOC:
 <a name="installation"></a>
 ## Installation
 
-```
+```smalltalk
 Metacello new
 	baseline: 'MetaLinksToolkit';
 	repository: 'github://peteruhnak/metalinks-toolkit/repository';
@@ -25,7 +26,7 @@ Metacello new
 
 MetaLinks themselves provide only very basic operations, e.g.:
 
-```st
+```smalltalk
 link uninstall.
 
 link := MetaLink new
@@ -75,13 +76,13 @@ installer installPermanent: metaLink toMethod: #name: of: MTElement.
 
 Even if you remove the method and then add it again, the metalink will add itself back. Instead you get rid of it via the installer.
 
-```st
+```smalltalk
 installer uninstallMethod: #name: of: MTElement.
 ```
 
 or more aggresively (removing all permanent metalinks in th class including attribute ones)
 
-```st
+```smalltalk
 installer uninstallAllPermanentLinksIn: MTElement.
 ```
 
@@ -90,13 +91,13 @@ installer uninstallAllPermanentLinksIn: MTElement.
 
 An attribute link will be added to all assignment nodes in the entire class **except** the `initialize` method. Similarly to a method, if you add a new assignment (or a new method with an assignment), it will be (re)added.
 
-```st
+```smalltalk
 installer installPermanent: metaLink toAttribute: #name of: MTElement.
 ```
 
 and to uninstall
 
-```st
+```smalltalk
 installer uninstallAttribute: #name of: MTElement.
 ```
 
@@ -116,7 +117,7 @@ The first two can be handled by *selector* permalinks and the last one by *attri
 
 `MTMetaLinksChangeInstaller` aim is to encapsulate this.
 
-```st
+```smalltalk
 observations := {
 	MTObservationSet
 		target: MTElement
@@ -143,7 +144,7 @@ container when: valueRemoved do: [:newValue | ... ].
 
 The default behavior of the class is to fire the announcement, more specifically
 
-```st
+```smalltalk
 changeMetaObjectBlock := [ :object :newValue |
 	object announcer announce: (ValueChanged newValue: newValue)
 ].
@@ -151,7 +152,7 @@ changeMetaObjectBlock := [ :object :newValue |
 
 Naturally this behavior can be customized
 
-```st
+```smalltalk
 "A block [ :object :newValue | ],
 where `object` is the observed object, and `newValue` the newly assigned value."
 ci changeMetaObjectBlock: [ :object :newValue | ... ]
@@ -163,7 +164,7 @@ ci changeMetaObjectBlock: [ :object :newValue | ... ]
 Final tool in the toolkit is an automatic inferencer. This will scan through the source code of the provided methods and will guess what places should be observed.
 
 The result will be a dictionary of `MTObservationSet` as was seen in previous section.
-```st
+```smalltalk
 MTMetaLinksInference new inferClasses: { MTElement . MTContainer }
  "a Dictionary(MTContainer->a MTObservationSet(
 	#change -> #(#elements).
